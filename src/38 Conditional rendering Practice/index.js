@@ -31,6 +31,9 @@ class App extends React.Component {
   }
 
   render() {
+    let buttonText = this.state.isLoggedIn ? 'log out' : 'log in';
+    let displayText = this.state.isLoggedIn ? 'Logged in' : 'Logged out';
+
     return (
       <div>
         <button
@@ -38,12 +41,9 @@ class App extends React.Component {
           type='button'
           onClick={this.handleClick}
         >
-          Log {
-          this.state.isLoggedIn ? 'out' : 'in'
-        }
+          {buttonText}
         </button>
-        <p>Logged {this.state.isLoggedIn ? 'in' : 'out'
-        }</p>
+        <p>{displayText}</p>
       </div>
     )
   }
