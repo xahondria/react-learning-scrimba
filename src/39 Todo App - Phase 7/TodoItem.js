@@ -6,8 +6,10 @@ import React from "react"
 
 function TodoItem(props) {
 
+  let todoItemClassList = props.item.completed ? 'todo-item todo-item--checked' : 'todo-item';
+
   return (
-    <div className="todo-item">
+    <div className={todoItemClassList}>
       <input
         type="checkbox"
         checked={props.item.completed}
