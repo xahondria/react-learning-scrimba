@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Index from './44 Container Component Architecture';
+import Index from './45 Meme Generator Capstone Project';
 
 class App extends Component {
   render() {
